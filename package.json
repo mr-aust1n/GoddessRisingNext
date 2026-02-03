@@ -11,7 +11,7 @@
   "dependencies": {
     "@fontsource-variable/cinzel": "5.2.8",
     "@fontsource/poppins": "5.2.7",
-    "next": "^15.1.4",
+    "next": "^16.1.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.5.0",
