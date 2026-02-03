@@ -1,0 +1,42 @@
+.notFoundPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 1rem;
+    min-height: 80vh;
+    background-color: var(--footer-color);
+    color: var(--main-color);
+    font-family: var(--text-font);
+    text-align: center;
+}
+
+.notFoundPage h1 {
+    font-family: var(--title-font);
+    font-size: 4rem;
+    color: var(--heading-color);
+    margin-bottom: 1rem;
+}
+
+.notFoundPage p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+}
+
+.homeButton {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--dk-brown);
+    color: var(--lighter-color);
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 2rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.homeButton:hover {
+    background-color: var(--heading-color);
+}

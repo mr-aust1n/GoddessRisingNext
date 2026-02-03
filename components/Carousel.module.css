@@ -1,0 +1,187 @@
+.carouselContainer {
+    position: relative;
+    width: 100%;
+    height: clamp(520px, 85vh, 900px);
+    overflow: hidden;
+}
+
+.swiper {
+    height: 100%;
+}
+
+.slide {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+/* Overlay layer */
+.slide::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
+/* Slide 1 background removed because we now use an <img> */
+.slide1 {
+    background-image: none;
+}
+
+/* Slides 2 and 3 remain background images */
+.slide2 {
+    background-image: url("/assets/images/hair-extensions-goddess-rising.webp");
+}
+
+.slide3 {
+    background-image: url("/assets/images/salon-goddess-rising.webp");
+}
+
+/* The prioritised image (acts like background-image) */
+.slideImage {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+/* Content styles */
+.carouselContent {
+    color: var(--footer-color);
+    position: relative;
+    z-index: 2;
+    top: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.textBlock {
+    display: block;
+}
+
+/* Headings */
+.carouselContent h1,
+.carouselContent h2 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-family: var(--title-font);
+    color: white;
+    padding-bottom: 0px;
+}
+
+/* Span text */
+.carouselContent span {
+    display: block;
+    font-size: 16px;
+    font-family: var(--text-font);
+    padding: 20px;
+    color: white;
+}
+
+.carouselBtn {
+    background-color: var(--footer-color);
+    border: 2px solid var(--dk-brown);
+    border-radius: 6px;
+    box-shadow: #000 5px 5px 20px;
+    width: 220px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--main-color);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.carouselBtn:hover {
+    background-color: var(--dk-brown);
+    border: 2px solid var(--footer-color);
+    color: var(--footer-color);
+}
+
+/* Swiper pagination */
+.swiper-pagination-bullet {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: var(--lighter-color);
+    border: 2px solid var(--dk-brown);
+    opacity: 1;
+    margin: 0 10px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--lighter-color) !important;
+}
+
+/* Mobile images for slide 2 and 3 */
+@media (max-width: 767px) {
+    .slide2 {
+        background-image: url("/assets/images/mobile/hair-extensions-goddess-rising-sm.webp");
+    }
+
+    .slide3 {
+        background-image: url("/assets/images/mobile/salon-goddess-rising-sm.webp");
+    }
+}
+
+/* Tablet styling */
+@media (min-width: 475px) {
+    .carouselContent {
+        padding: 10px 0 0 130px;
+        text-align: left;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .carouselContent h1,
+    .carouselContent h2 {
+        font-size: 55px;
+        margin-bottom: 20px;
+        font-weight: 400;
+    }
+
+    .carouselContent span {
+        font-size: 1.8em;
+        max-width: 40%;
+    }
+
+    .swiper-pagination-bullet {
+        margin-bottom: 100px;
+    }
+
+    .carouselBtn {
+        margin-top: 30px;
+    }
+}
+
+/* Desktop overlay: dark shadow from LEFT fading to RIGHT */
+@media (min-width: 768px) {
+    .slide::before {
+        background: linear-gradient(90deg,
+                rgba(0, 0, 0, 0.85) 0%,
+                rgba(0, 0, 0, 0.55) 80%,
+                rgba(0, 0, 0, 0.25) 95%,
+                rgba(0, 0, 0, 0.00) 100%);
+        max-width: 60%;
+        max-height: 100%;
+    }
+}
+
+/* Accessibility: respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .swiper {
+        scroll-behavior: auto;
+    }
+}

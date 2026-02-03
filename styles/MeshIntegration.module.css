@@ -1,0 +1,183 @@
+/* === HERO === */
+.heroSection {
+    background-color: var(--footer-color);
+    padding: 70px 20px 40px;
+}
+
+.heroInner {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.heroText {
+    color: #603c2b;
+    font-family: var(--text-font);
+}
+
+.heroTitle {
+    font-family: var(--title-font);
+    font-size: clamp(2rem, 6vw, 3rem);
+    line-height: 1.15;
+    margin: 0 0 12px;
+}
+
+.heroTitleAccent {
+    display: block;
+    font-size: clamp(1.2rem, 4vw, 1.8rem);
+    font-family: var(--text-font);
+    font-weight: 500;
+    color: #6f4e37;
+    margin-top: 6px;
+}
+
+.heroSubtitle {
+    margin: 0 0 18px;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #6f4e37;
+    max-width: 60ch;
+}
+
+.heroActions {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.heroButtonPrimary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: var(--text-font);
+    font-size: 1rem;
+    padding: 14px 18px;
+    border-radius: 8px;
+    min-height: 44px;
+}
+
+.heroButtonPrimary {
+    background-color: var(--dk-brown);
+    color: #000;
+    font-weight: 600;
+}
+
+.heroButtonPrimary:hover,
+.heroButtonPrimary:focus {
+    background-color: #8a7163;
+}
+
+.heroButtonPrimary:focus {
+    outline: 2px solid #000;
+    outline-offset: 3px;
+}
+
+
+/* Media */
+.heroMedia {
+    width: 100%;
+}
+
+.heroImage {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 14px;
+    max-height: 420px;
+    object-fit: cover;
+}
+
+/* Desktop */
+@media (min-width: 900px) {
+    .heroSection {
+        padding: 90px 30px 50px;
+    }
+
+    .heroInner {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 50px;
+    }
+
+    .heroText {
+        flex: 1;
+    }
+
+    .heroMedia {
+        flex: 1;
+    }
+
+    .heroActions {
+        gap: 14px;
+    }
+}
+
+/* === MESH SECTION === */
+.meshSection {
+    background-color: #f9f5f2;
+    padding: 60px 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.meshContainer {
+    color: #603c2b;
+    font-family: var(--text-font);
+    position: relative;
+}
+
+.meshContent h2 {
+    margin-bottom: 10px;
+}
+
+.meshContent h3,
+.meshContent h4 {
+    font-family: var(--title-font);
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.meshContent p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #6f4e37;
+}
+
+/* === BEFORE & AFTER CTA === */
+.beforeAfterCtaSection {
+    display: flex;
+    justify-content: center;
+    padding: 70px 20px 90px;
+    background-color: #fff;
+}
+
+.beforeAfterButton {
+    background-color: var(--dk-brown);
+    color: #000;
+    font-family: var(--text-font);
+    font-size: 1rem;
+    padding: 16px 34px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.beforeAfterButton:hover,
+.beforeAfterButton:focus {
+    background-color: #8a7163;
+    transform: translateY(-2px);
+}
+
+.beforeAfterButton:focus {
+    outline: 2px solid #000;
+    outline-offset: 3px;
+}

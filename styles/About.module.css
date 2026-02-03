@@ -1,0 +1,198 @@
+.aboutPage {
+    font-family: var(--text-font);
+}
+
+/* === HERO SECTION === */
+.heroSection {
+    position: relative;
+    height: clamp(520px, 85vh, 900px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+/* Hero image (now a real <img>) */
+.heroImage {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+
+    object-fit: cover;
+    z-index: 0;
+    display: block;
+
+}
+
+/* Overlay for readability */
+.heroSection::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(90deg,
+            rgba(0, 0, 0, 0.85) 0%,
+            rgba(0, 0, 0, 0.55) 80%,
+            rgba(0, 0, 0, 0.25) 95%,
+            rgba(0, 0, 0, 0.00) 100%);
+    max-width: 60%;
+    max-height: 100%;
+
+}
+
+.heroContent {
+    max-width: 1200px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    padding: 0 30px;
+}
+
+.heroTitle {
+    font-family: var(--title-font);
+    color: var(--footer-color);
+    font-size: 36px;
+    line-height: 1.2;
+    max-width: 500px;
+    margin: 0;
+    margin-top: 122px;
+    padding: 22px 6px;
+}
+
+/* === DESKTOP === */
+@media (min-width: 768px) {
+    .heroContent {
+        padding: 0 30px;
+    }
+
+    .heroTitle {
+        font-size: 55px;
+        font-weight: 400;
+    }
+}
+
+/* === SPLIT SECTION === */
+.aboutSplitSection {
+    background-color: var(--section-bg, #fff);
+}
+
+.aboutSplitContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.textSide,
+.imageSide {
+    width: 100%;
+    background-color: #b06c3e;
+}
+
+/* === TEXT BOX === */
+.textBox {
+    color: white;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.textBox h2 {
+    font-family: var(--title-font);
+    font-size: 28px;
+    margin-bottom: 20px;
+    line-height: 1.4;
+    color: var(--text-font);
+    font-weight: 500;
+}
+
+.textBox p {
+    font-family: var(--text-font);
+    font-size: 16px;
+    line-height: 1.6;
+    color: #f3e4d8;
+    margin-bottom: 16px;
+}
+
+.readMore {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.readMore:hover {
+    text-decoration: underline;
+}
+
+/* === IMAGE === */
+.aboutImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* === DESKTOP: SIDE BY SIDE === */
+@media (min-width: 768px) {
+    .aboutSplitContainer {
+        flex-direction: row-reverse;
+    }
+
+    .textSide,
+    .imageSide {
+        width: 50%;
+    }
+
+    .textBox {
+        text-align: left;
+        padding: 60px;
+    }
+
+    .textBox h2 {
+        font-size: 1.8em;
+    }
+
+    .aboutImage {
+        width: 80%;
+    }
+}
+
+@media (min-width: 900px) {
+    .textBox h2 {
+        font-size: 3em;
+    }
+}
+
+/* === TESTIMONIAL SECTION === */
+.testimonialSection {
+    background-color: #f9f5f2;
+    padding: 60px 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.aboutContainer {
+    max-width: 1400px;
+    color: #603c2b;
+    font-family: var(--text-font);
+}
+
+.testimonialContent h3,
+.testimonialContent h4 {
+    font-family: var(--title-font);
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.testimonialContent p,
+.testimonialContent li {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #6f4e37;
+}

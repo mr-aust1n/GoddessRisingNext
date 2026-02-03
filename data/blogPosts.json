@@ -1,0 +1,32 @@
+[
+  {
+    "id": "goddess-awakening",
+    "title": "Awaken Your Inner Goddess",
+    "date": "May 2025",
+    "excerpt": "Lorem ipsum dolor sit amet...",
+    "image": "/assets/images/goddess.png",
+    "content": "Full video transcript goes here will go here...Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ducimus eligendi non sunt atque accusantium repellendus dolor eos velit itaque.\n\n\n seconf linenLorem ipsum dolor sit amet consectetur adipisicing elit.\n\nMaiores alias culpa eum non deleniti similique? Ducimus similique corrupti molestias explicabo quidem asperiores repudiandae voluptatum iure eaque, cupiditate modi eligendi sed recusandae consectetur nemo sint? Eos iste molestiae, culpa, eligendi saepe veritatis harum modi quibusdam nisi, id impedit aliquid aspernatur et.\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, quaerat?",
+    "videoUrl": "https://www.youtube.com/embed/ptNDlLRuw4Q",
+    "bgColor": "#B97B4C"
+  },
+  {
+    "id": "rituals-for-peace",
+    "title": "Daily Rituals for Peace & Power",
+    "date": "April 2025",
+    "excerpt": "Lorem ipsum dolor sit amet...",
+    "image": "/assets/images/goddess.png",
+    "content": "Full video transcript goes here will go here...Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ducimus eligendi non sunt atque accusantium repellendus dolor eos velit itaque.\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Maiores alias culpa eum non deleniti similique? Ducimus similique corrupti molestias explicabo quidem asperiores repudiandae voluptatum iure eaque, cupiditate modi eligendi sed recusandae consectetur nemo sint? Eos iste molestiae, culpa, eligendi saepe veritatis harum modi quibusdam nisi, id impedit aliquid aspernatur et.\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, quaerat?",
+    "videoUrl": "https://www.youtube.com/embed/ptNDlLRuw4Q",
+    "bgColor": "#F8EFD9"
+  },
+  {
+    "id": "mesh-hair-system",
+    "title": "Mesh Power",
+    "date": "March 2025",
+    "excerpt": "Lorem ipsum dolor sit amet...",
+    "image": "/assets/images/goddess.png",
+    "content": "Full video transcript goes here will go here...Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ducimus eligendi non sunt atque accusantium repellendus dolor eos velit itaque.\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Maiores alias culpa eum non deleniti similique? Ducimus similique corrupti molestias explicabo quidem asperiores repudiandae voluptatum iure eaque, cupiditate modi eligendi sed recusandae consectetur nemo sint? Eos iste molestiae, culpa, eligendi saepe veritatis harum modi quibusdam nisi, id impedit aliquid aspernatur et.\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, quaerat?",
+    "videoUrl": "https://www.youtube.com/embed/ptNDlLRuw4Q",
+    "bgColor": "#FFFFFF"
+  }
+]

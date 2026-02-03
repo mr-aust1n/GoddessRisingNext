@@ -1,0 +1,39 @@
+.card {
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 20px -6px rgba(0, 0, 0, 0.75);
+    max-width: 100%;
+    border: #707070 2px solid;
+}
+
+.title {
+    font-family: var(--text-font);
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--main-color);
+    margin: 1.5rem 0rem;
+}
+
+.dateExcerpt {
+    font-family: var(--text-font);
+    font-size: 0.875rem;
+    color: var(--main-color);
+    margin-bottom: 1.5rem;
+}
+
+.image {
+    border-radius: 1rem;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: #fff 2px solid;
+}
+
+.link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--main-color);
+    font-weight: 500;
+    font-size: 0.875rem;
+    text-decoration: underline;
+}

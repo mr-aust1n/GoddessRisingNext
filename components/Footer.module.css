@@ -1,0 +1,127 @@
+.mainFooter {
+    background-color: var(--footer-color);
+    color: var(--main-color);
+    padding: 40px 20px;
+    font-family: var(--text-font);
+}
+
+/* === MOBILE GRID === */
+.footerGridMobile {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "menu content"
+        "footer footer";
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+/* === MOBILE SECTIONS === */
+.footerHeader {
+    grid-area: header;
+    text-align: center;
+}
+
+.footerMenu {
+    grid-area: menu;
+}
+
+.footerContent {
+    grid-area: content;
+}
+
+.footerBottom {
+    grid-area: footer;
+    text-align: center;
+}
+
+/* === LOGO === */
+.footerLogo {
+    max-width: 260px;
+    height: auto;
+    display: block;
+}
+
+/* === SHARED ELEMENT STYLES === */
+.sectionHeading {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--main-color);
+}
+
+.linkList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footerLink {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: var(--main-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footerLink:hover {
+    color: var(--dk-brown);
+}
+
+.address {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-top: 5px;
+    font-weight: 500;
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+.address:hover {
+    color: var(--dk-brown);
+    text-decoration: underline;
+}
+
+.copyText {
+    font-size: 14px;
+    color: var(--main-color);
+    padding-top: 20px;
+}
+
+.copyText a {
+    color: var(--main-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.copyText a:hover {
+    color: var(--dk-brown);
+}
+
+/* === DESKTOP STYLES === */
+@media (min-width: 768px) {
+    .topSection {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1280px;
+        margin: 0 auto;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .leftColumn,
+    .middleColumn,
+    .rightColumn {
+        flex: 1;
+        padding: 0 20px;
+    }
+
+    .desktopCopyright {
+        text-align: center;
+        padding: 20px 0;
+        background-color: var(--footer-color);
+        margin-top: 20px;
+    }
+}

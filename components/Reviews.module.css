@@ -1,0 +1,141 @@
+.reviewsSection {
+    margin: 0;
+    padding: 4rem 1rem;
+    background-color: #f1ddd0;
+    text-align: center;
+}
+
+.heading {
+    font-family: var(--title-font);
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--main-color);
+    letter-spacing: 2px;
+}
+
+/* Wrapper to hold arrows + swiper */
+.swiperWrapper {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiperContainer {
+    flex: 1;
+}
+
+.reviewCard {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    font-family: var(--text-font);
+    font-size: 1rem;
+    color: var(--main-color);
+    line-height: 1.6;
+}
+
+.reviewer {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.message {
+    margin-top: 0.5rem;
+}
+
+/* Arrow buttons */
+.arrowButtonLeft,
+.arrowButtonRight {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.arrowButtonLeft {
+    position: absolute;
+    left: -0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.arrowButtonRight {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.arrowIcon {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.arrowButtonLeft:hover .arrowIcon,
+.arrowButtonRight:hover .arrowIcon {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* Hide arrows on mobile */
+@media (max-width: 768px) {
+
+    .arrowButtonLeft,
+    .arrowButtonRight {
+        display: none;
+    }
+}
+
+/* Swiper dots */
+.swiper-pagination-bullets {
+    bottom: 10px !important;
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: var(--black-color);
+    opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--main-color);
+    opacity: 1;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.reviewCard {
+    /* existing styles... */
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    font-family: var(--text-font);
+    font-size: 1rem;
+    color: var(--main-color);
+    line-height: 1.6;
+
+    /* NEW slide-in effect */
+    animation: slideIn 0.8s ease both;
+}
