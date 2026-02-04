@@ -108,7 +108,7 @@ Visit http://localhost:3000
 | Feature | React (Old) | Next.js (New) |
 |---------|-------------|---------------|
 | **Routing** | React Router | App Router (file-based) |
-| **Links** | `<Link to="/about">` | `<Link href="/about">` |
+| **Links** | `<Link href="/about">` | `<Link href="/about">` |
 | **Metadata** | React Helmet | `export const metadata` |
 | **Client Code** | All client-side | `'use client'` directive |
 | **Imports** | From 'react-router-dom' | From 'next/link' |

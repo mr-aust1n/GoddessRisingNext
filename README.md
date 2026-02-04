@@ -36,7 +36,7 @@ The following pages need to be created in their respective `/app/[page]/page.js`
 **Before (React Router):**
 ```jsx
 import { Link } from 'react-router-dom';
-<Link to="/about">About</Link>
+<Link href="/about">About</Link>
 ```
 
 **After (Next.js):**
@@ -213,7 +213,7 @@ To convert a page from React to Next.js:
    - Remove React Router imports
    - Replace `<Helmet>` with `export const metadata`
    - Add `'use client'` if using hooks/browser APIs
-   - Update `<Link to=...>` to `<Link href=...>`
+   - Update `<Link href=...>` to `<Link href=...>`
    - Import CSS modules from `../../styles/[Page].module.css`
 4. Test the page locally
 

@@ -6,44 +6,13 @@
     padding: 30px;
 }
 
+.text {
+    width: 100%;
+}
+
 .text h3 {
     font-size: 1.5rem;
     margin: 0;
-}
-
-.text p {
-    font-size: 1rem;
-    margin: 0.5rem 0 0;
-}
-
-.images {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.image {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.image img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 22px;
-    border: 3px solid var(--dk-brown);
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.14);
-}
-
-.image figcaption {
-    background-color: #000;
-    color: #fff;
-    padding: 0.25rem 0.5rem;
-    margin-top: 0.5rem;
-    font-size: 0.875rem;
-    border-radius: 14px;
 }
 
 .description {
@@ -55,6 +24,39 @@
     max-width: 40ch;
 }
 
+.images {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+.image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.photo {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 22px;
+    border: 3px solid var(--dk-brown);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.14);
+    object-fit: cover;
+}
+
+.image figcaption {
+    background-color: #000;
+    color: #fff;
+    padding: 0.25rem 0.5rem;
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    border-radius: 14px;
+}
+
 /* Desktop alternating layout */
 @media (min-width: 768px) {
     .beforeAfter {
@@ -63,6 +65,7 @@
         max-width: 1400px;
         margin: 0 auto;
         padding: 52px;
+        gap: 3rem;
     }
 
     .images {
@@ -83,9 +86,5 @@
     .flip .text {
         padding-left: 1rem;
         padding-right: 0;
-    }
-
-    .flip .images {
-        flex-direction: row;
     }
 }

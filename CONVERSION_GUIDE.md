@@ -141,7 +141,7 @@ Metadata goes in the parent layout or you create a wrapper. For simplicity with 
 
 **Before:**
 ```jsx
-<Link to="/about">About</Link>
+<Link href="/about">About</Link>
 ```
 
 **After:**
@@ -264,7 +264,7 @@ export default function NotFound() {
 | `import { Link } from 'react-router-dom'` | `import Link from 'next/link'` |
 | `import { useNavigate } from 'react-router-dom'` | `import { useRouter } from 'next/navigation'` |
 | `import { useParams } from 'react-router-dom'` | Use `params` prop in page component |
-| `<Link to="/path">` | `<Link href="/path">` |
+| `<Link href="/path">` | `<Link href="/path">` |
 
 ### Component Type Decision
 | If the page has... | Use... |

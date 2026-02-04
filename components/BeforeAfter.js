@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import styles from './BeforeAfter.module.css';
+import Image from "next/image";
+import styles from "./BeforeAfter.module.css";
 
 const BeforeAfter = ({
   name,
@@ -27,22 +27,28 @@ const BeforeAfter = ({
 
       <div className={styles.images}>
         <figure className={styles.image}>
-          <img
+          <Image
+            className={styles.photo}
             src={beforeImage}
             alt={`Before results for ${name}`}
-            width="359"
-            height="604"
+            width={359}
+            height={604}
             loading="lazy"
+            decoding="async"
+            sizes="(max-width: 768px) 50vw, 359px"
           />
         </figure>
 
         <figure className={styles.image}>
-          <img
+          <Image
+            className={styles.photo}
             src={afterImage}
             alt={`After results for ${name}`}
-            width="359"
-            height="604"
+            width={359}
+            height={604}
             loading="lazy"
+            decoding="async"
+            sizes="(max-width: 768px) 50vw, 359px"
           />
         </figure>
       </div>

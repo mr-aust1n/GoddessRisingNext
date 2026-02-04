@@ -88,7 +88,7 @@ vercel
 | Feature | Old (React) | New (Next.js) |
 |---------|-------------|---------------|
 | Routing | React Router | App Router (file-based) |
-| Links | `<Link to=...>` | `<Link href=...>` |
+| Links | `<Link href=...>` | `<Link href=...>` |
 | Metadata | React Helmet | `export const metadata` |
 | Images | `<img>` | `<Image>` (optional) |
 | Client code | All client-side | 'use client' directive |
