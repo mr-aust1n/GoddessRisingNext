@@ -99,10 +99,12 @@
     text-align: center;
 }
 
+
+
 .textBox h2 {
     font-family: var(--title-font);
     font-size: 28px;
-    margin-bottom: 20px;
+    margin: 20px 20px;
     line-height: 1.4;
     color: var(--text-font);
     font-weight: 500;
