@@ -1,18 +1,19 @@
 .aboutPage {
     font-family: var(--text-font);
+    overflow-x: clip;
 }
 
-
-/* HERO */
+/* === HERO SECTION === */
 .heroSection {
     position: relative;
-    height: clamp(520px, 100vh, 900px);
+    height: clamp(520px, 85vh, 900px);
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
 }
 
+/* Hero image (real <img>) */
 .heroImage {
     position: absolute;
     inset: 0;
@@ -20,8 +21,10 @@
     height: 100%;
     object-fit: cover;
     z-index: 0;
+    display: block;
 }
 
+/* Overlay for readability */
 .heroSection::before {
     content: "";
     position: absolute;
@@ -31,8 +34,9 @@
             rgba(0, 0, 0, 0.85) 0%,
             rgba(0, 0, 0, 0.55) 80%,
             rgba(0, 0, 0, 0.25) 95%,
-            rgba(0, 0, 0, 0));
+            rgba(0, 0, 0, 0) 100%);
     max-width: 60%;
+    max-height: 100%;
 }
 
 .heroContent {
@@ -47,81 +51,176 @@
     font-family: var(--title-font);
     color: var(--footer-color);
     font-size: 36px;
+    line-height: 1.2;
     max-width: 500px;
+    margin: 0;
     margin-top: 122px;
     padding: 22px 6px;
 }
 
-@media (min-width: 768px) {
-    .heroTitle {
-        font-size: 55px;
-    }
+/* === SPLIT SECTION (FULL WIDTH) === */
+.aboutSplitSection {
+    position: relative;
+    left: 50%;
+    width: 100vw;
+    transform: translateX(-50%);
+    overflow-x: clip;
+    background-color: var(--section-bg, #fff);
 }
 
-/* SPLIT */
 .aboutSplitContainer {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .textSide,
 .imageSide {
+    width: 100%;
     background-color: #b06c3e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+/* === TEXT BOX === */
 .textBox {
+    color: #fff;
     padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
+    max-width: 700px;
 }
 
 .textBox h2 {
     font-family: var(--title-font);
     font-size: 28px;
+    margin-bottom: 20px;
+    line-height: 1.4;
     color: var(--footer-color);
+    font-weight: 500;
+}
+
+.textBox p {
+    font-family: var(--text-font);
+    font-size: 16px;
+    line-height: 1.6;
+    color: #f3e4d8;
+    margin-bottom: 16px;
 }
 
 .readMore {
-    color: white;
+    color: #fff;
     font-weight: 700;
     text-decoration: none;
     font-size: 22px;
 }
 
-.aboutImage {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+.readMore:hover {
+    text-decoration: underline;
 }
 
-/* LONG COPY */
+/* === IMAGE === */
+.aboutImage {
+    width: 100%;
+    /* max-width: 520px; */
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 40px auto;
+}
+
+/* === TESTIMONIAL SECTION === */
 .testimonialSection {
     background-color: #f9f5f2;
     padding: 60px 30px;
+    display: flex;
+    justify-content: center;
 }
 
 .aboutContainer {
     max-width: 1400px;
-    margin: 0 auto;
+    color: #603c2b;
+    font-family: var(--text-font);
 }
 
 .testimonialContent h3,
 .testimonialContent h4 {
     font-family: var(--title-font);
-    margin: 30px 0 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: 700;
     font-size: 20px;
 }
 
 .testimonialContent p,
 .testimonialContent li {
+    margin-bottom: 20px;
     font-size: 16px;
     line-height: 1.6;
     color: #6f4e37;
-    margin-bottom: 20px;
 }
 
-/* EMPHASIS FIX */
+/* EMPHASIS */
 .emphasis {
     font-weight: 900;
     color: #603c2b;
     font-family: sans-serif;
+}
+
+/* === DESKTOP === */
+@media (min-width: 768px) {
+    .heroContent {
+        padding: 0 30px;
+    }
+
+    .heroTitle {
+        font-size: 55px;
+        font-weight: 400;
+    }
+
+    .aboutSplitContainer {
+        flex-direction: row-reverse;
+        /* min-height: 420px; */
+        max-height: 60%;
+    }
+
+    .textSide,
+    .imageSide {
+        width: 50%;
+    }
+
+    .textBox {
+        text-align: left;
+        padding: 60px;
+    }
+
+    .textBox h2 {
+        font-size: 1.8em;
+    }
+
+    .aboutImage {
+        margin: 0 auto;
+        max-width: 755px;
+    }
+}
+
+@media (min-width: 900px) {
+    .textBox h2 {
+        font-size: 4em;
+    }
+
+    .testimonialContent h3,
+    .testimonialContent h4 {
+        font-size: 40px;
+    }
+
+    .testimonialContent p,
+    .testimonialContent li {
+        margin-top: 22px;
+    }
+
 }

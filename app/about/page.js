@@ -113,8 +113,8 @@ export default function About() {
                 className={styles.aboutImage}
                 loading="lazy"
                 decoding="async"
-                width="900"
-                height="900"
+                width="300"
+                height="300"
               />
             </div>
           </div>
