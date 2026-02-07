@@ -81,6 +81,19 @@
     color: #6f4e37;
 }
 
+.bulletList li {
+    margin-bottom: 20px;
+}
+
+
+.ctaSpan {
+    font-weight: 900;
+    font-family: sans-serif;
+}
+
+.ctaSpan:hover {
+    color: var(--main-color);
+}
 
 /* === CONSULTATION IMAGE BREAK === */
 .consultationImageSection {

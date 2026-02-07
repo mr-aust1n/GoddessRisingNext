@@ -173,7 +173,7 @@ export default function Consultation() {
                   aria-label="Book a consultation on Fresha (opens in a new tab)"
                   className={styles.ctaLink}
                 >
-                  <strong>Book your consultation</strong>
+                  <span className={styles.ctaSpan}>Book your consultation</span>
                 </a>{" "}
                 today and begin your journey towards confidence, transformation,
                 and rising as the goddess you truly are.
