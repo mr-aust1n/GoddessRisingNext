@@ -272,11 +272,15 @@ export default function Contact() {
                   id="mobile"
                   name="mobile"
                   value={mobile}
-                  onChange={(e) => setMobile(e.target.value)}
+                  onChange={(e) =>
+                    setMobile(e.target.value.replace(/[^0-9+()\s-]/g, ""))
+                  }
                   placeholder="Your mobile number"
                   autoComplete="tel"
                   inputMode="tel"
                   required
+                  pattern="^[0-9+()\\s-]{7,20}$"
+                  title="Enter a valid phone number (digits, spaces, +, brackets, hyphens)."
                   aria-label="Enter your mobile number"
                 />
               </div>
