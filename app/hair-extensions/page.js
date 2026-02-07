@@ -116,23 +116,25 @@ export default function HairExtensions() {
           <h2>Methods I Offer</h2>
 
           <p>
-            <strong>Nano Rings</strong> – One of the smallest and most discreet
-            methods, perfect for fine hair.
+            <span className={styles.extensionSpan}>Nano Rings</span> – One of
+            the smallest and most discreet methods, perfect for fine hair.
           </p>
 
           <p>
-            <strong>Tiny Tips</strong> – Lightweight bonds that blend
-            beautifully with natural hair.
+            <span className={styles.extensionSpan}>Tiny Tips</span> –
+            Lightweight bonds that blend beautifully with natural hair.
           </p>
 
           <p>
-            <strong>Braidless Weave / LA Weave</strong> – Secure, comfortable,
-            and ideal for thickness and volume.
+            <span className={styles.extensionSpan}>
+              Braidless Weave / LA Weave
+            </span>{" "}
+            – Secure, comfortable, and ideal for thickness and volume.
           </p>
 
           <p>
-            <strong>Secret Weave</strong> – A virtually invisible option with no
-            visible beads.
+            <span className={styles.extensionSpan}>Secret Weave</span> – A
+            virtually invisible option with no visible beads.
           </p>
 
           <p>
