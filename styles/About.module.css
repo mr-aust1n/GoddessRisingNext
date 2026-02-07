@@ -126,7 +126,6 @@
 /* === IMAGE === */
 .aboutImage {
     width: 100%;
-    /* max-width: 520px; */
     height: auto;
     object-fit: contain;
     display: block;
@@ -215,7 +214,8 @@
 
     .testimonialContent h3,
     .testimonialContent h4 {
-        font-size: 40px;
+        font-size: 1.75rem;
+        ;
     }
 
     .testimonialContent p,
