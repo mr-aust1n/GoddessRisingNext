@@ -4,14 +4,13 @@ import BeforeAfter from "../../components/BeforeAfter";
 import styles from "../../styles/MeshIntegration.module.css";
 export const metadata = {
   title:
-    "Mesh Integration in Belper | Hair Loss and Thinning Support | Goddess Rising",
+    "Mesh Integration in Belper | Hair Loss Support",
   description:
     "Mesh integration in Belper for women experiencing hair thinning or hair loss. A discreet, breathable system designed for secure coverage and natural blending.",
   alternates: { canonical: "/mesh-integration" },
   openGraph: {
     type: "website",
-    title: "Mesh Integration in Belper | Goddess Rising",
-    description:
+    title: "Hair Extensions in Belper | Natural Looking Results
       "A discreet mesh integration system for coverage, comfort, and confidence. Tailored fitting and ongoing maintenance in a private Belper studio.",
     images: ["/assets/images/mesh-integration-goddess-rising-og.webp"],
     url: "https://www.goddessrisinghair.co.uk/mesh-integration",

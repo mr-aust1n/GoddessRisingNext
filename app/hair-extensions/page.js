@@ -3,7 +3,7 @@ import BeforeAfter from "../../components/BeforeAfter";
 import styles from "../../styles/HairExtensions.module.css";
 
 export const metadata = {
-  title: "Hair Extensions in Belper | Natural Looking Results | Goddess Rising",
+  title: "Hair Extensions in Belper | Natural Looking Results",
   description:
     "Premium hair extensions in Belper with seamless blending and a tailored approach. Options include nano rings, tiny tips, braidless weave, and secret weave.",
   alternates: { canonical: "/hair-extensions" },
