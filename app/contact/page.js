@@ -152,7 +152,7 @@ export default function Contact() {
                 </li>
                 <li>
                   <a
-                    href="https://tiktok.com"
+                    href="https://www.tiktok.com/@goddess_rising_hair"
                     target="_blank"
                     rel="noreferrer"
                     aria-label="Visit Goddess Rising Hair Extensions on TikTok"
