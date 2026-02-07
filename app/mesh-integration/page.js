@@ -154,7 +154,7 @@ export default function Hairmeshs() {
       <BeforeAfter
         name="Jo"
         location="Heanor, Derbyshire"
-        description="Years of lightening had left Jo’s hair damaged and fragile. A mesh integration system protected her natural hair while delivering long, glamorous results."
+        description="Years of lightening had left Jo’s hair damaged and fragile. A mesh integration system gave her the long, glamorous hair she desired, while protecting her natural hair underneath so it could recover and grow."
         beforeImage="/assets/images/Mesh_Hair_before_Client2.webp"
         afterImage="/assets/images/Mesh_Hair_after_Client2.webp"
         flip={false}
@@ -163,7 +163,7 @@ export default function Hairmeshs() {
       <BeforeAfter
         name="Lucy"
         location="Heage, Amber Valley"
-        description="After cancer treatment caused hair loss, mesh integration gently restored Lucy’s confidence as she rebuilt her life."
+        description="After cancer treatment left Lucy with hair loss, her slow regrowth became a difficult reminder of her journey. A mesh integration system gently transformed her hair, restoring her confidence, identity, and sense of self as she rebuilt her life after cancer."
         beforeImage="/assets/images/Mesh_Hair_before_Client3.webp"
         afterImage="/assets/images/Mesh_Hair_after_Client3.webp"
         flip={true}
