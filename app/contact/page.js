@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Script from "next/script";
 import styles from "../../styles/Contact.module.css";
 import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa";
 
@@ -10,29 +11,61 @@ export default function Contact() {
   const [subject, setSubject] = useState("");
   const [mobile, setMobile] = useState("");
   const [message, setMessage] = useState("");
+  const [company, setCompany] = useState(""); // honeypot
   const [formStatus, setFormStatus] = useState(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setFormStatus(null);
 
     try {
+      setIsSubmitting(true);
+
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name,
+          email,
+          subject,
+          mobile,
+          message,
+          company, // honeypot
+        }),
+      });
+
+      const data = await res.json().catch(() => ({}));
+
+      if (!res.ok) {
+        setFormStatus({
+          type: "error",
+          message: data?.error || "Failed to send message. Try again later.",
+        });
+        return;
+      }
+
       setFormStatus({ type: "success", message: "Thanks for your message!" });
       setName("");
       setEmail("");
       setSubject("");
       setMobile("");
       setMessage("");
-    } catch (err) {
+      setCompany("");
+    } catch {
       setFormStatus({
         type: "error",
         message: "Failed to send message. Try again later.",
       });
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
   return (
     <>
-      <script
+      <Script
+        id="contact-jsonld"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
@@ -171,11 +204,29 @@ export default function Contact() {
               onSubmit={handleSubmit}
               aria-label="Send a message to Goddess Rising Hair Extensions"
             >
+              {/* Honeypot field (hidden) */}
+              <div
+                style={{ position: "absolute", left: "-9999px" }}
+                aria-hidden="true"
+              >
+                <label htmlFor="company">Company</label>
+                <input
+                  id="company"
+                  name="company"
+                  type="text"
+                  tabIndex={-1}
+                  autoComplete="off"
+                  value={company}
+                  onChange={(e) => setCompany(e.target.value)}
+                />
+              </div>
+
               <div className={styles.formGroup}>
                 <label htmlFor="name">Full name</label>
                 <input
                   type="text"
                   id="name"
+                  name="name"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   placeholder="Sally Hair"
@@ -190,6 +241,7 @@ export default function Contact() {
                 <input
                   type="email"
                   id="email"
+                  name="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="hello@websitename.com"
@@ -204,6 +256,7 @@ export default function Contact() {
                 <input
                   type="text"
                   id="subject"
+                  name="subject"
                   value={subject}
                   onChange={(e) => setSubject(e.target.value)}
                   placeholder="Your subject"
@@ -217,6 +270,7 @@ export default function Contact() {
                 <input
                   type="tel"
                   id="mobile"
+                  name="mobile"
                   value={mobile}
                   onChange={(e) => setMobile(e.target.value)}
                   placeholder="Your mobile number"
@@ -231,6 +285,7 @@ export default function Contact() {
                 <label htmlFor="message">Your message</label>
                 <textarea
                   id="message"
+                  name="message"
                   rows="4"
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
@@ -245,8 +300,9 @@ export default function Contact() {
                   type="submit"
                   className={styles.submitBtn}
                   aria-label="Send message"
+                  disabled={isSubmitting}
                 >
-                  Send Message
+                  {isSubmitting ? "Sending..." : "Send Message"}
                 </button>
 
                 {formStatus && (
@@ -272,7 +328,7 @@ export default function Contact() {
           </div>
         </div>
 
-        {/* Full width map at the bottom (max width 1400px) */}
+        {/* Map */}
         <div className={styles.mapOuter} aria-label="Map section">
           <div className={styles.mapInner} aria-label="Map container">
             <div className={styles.mapHeader} aria-label="Map header">
