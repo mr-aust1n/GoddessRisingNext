@@ -181,3 +181,9 @@
     outline: 2px solid #000;
     outline-offset: 3px;
 }
+
+.meshContainer a {
+    font-weight: 900;
+    text-decoration: underline;
+    font-family: sans-serif;
+}

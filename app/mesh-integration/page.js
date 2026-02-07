@@ -103,7 +103,10 @@ export default function Hairmeshs() {
               Hair loss can be one of the most deeply personal and painful
               experiences for a woman. It’s not just hair disappearing, it can
               chip away at confidence, identity, and how you feel about stepping
-              out into the world.
+              out into the world. I understand that loss on a visceral level,
+              and I created Goddess Rising to provide more than a cosmetic fix:
+              a transformation that helps restore not only your hair, but your
+              spirit, your sense of self, and your feminine energy.
             </p>
 
             <h2>What Is Mesh Integration?</h2>
@@ -111,9 +114,17 @@ export default function Hairmeshs() {
             <p>
               Mesh integration is a non-surgical, gentle, and custom-fitted hair
               loss system that bridges areas of thinning or hair loss by
-              integrating a fine, breathable mesh onto your scalp.
+              integrating a fine, breathable mesh onto your scalp. Through this
+              mesh, I anchor premium hair that blends with your natural hair.
             </p>
-
+            <p>
+              Key features: <br />• The mesh acts as a foundation, allowing
+              added hair to sit seamlessly and invisibly, rather than pulling or
+              stressing weak natural hair. <br /> • It limits tension because
+              the mesh shares the weight, rather than putting strain on your
+              remaining strands. <br /> • It covers areas where hair has thinned
+              or gone completely, giving you a full, natural finish.
+            </p>
             <p>
               Unlike wigs or glued systems, mesh integration gives you freedom,
               breathability, and a solution that feels like your own hair.
@@ -134,7 +145,7 @@ export default function Hairmeshs() {
       <BeforeAfter
         name="Sharine"
         location="Belper, Derbyshire"
-        description="Years of chemical damage and struggling with trichotillomania left Sharine’s hair fragile and uneven. A mesh integration system restored her confidence and sense of self."
+        description="Years of chemical damage and struggling with trichotillomania left Sharine’s hair fragile and uneven, and her confidence low. We applied a mesh integration system which transformed not just her hair, but how she felt. Soft, natural-looking hair gave her the confidence to finally feel like herself again."
         beforeImage="/assets/images/Mesh_Hair_before_Client1.webp"
         afterImage="/assets/images/Mesh_Hair_after_Client1.webp"
         flip={true}
