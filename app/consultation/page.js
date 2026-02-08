@@ -3,7 +3,7 @@ import Reviews from "../../components/Reviews";
 import styles from "../../styles/Consultation.module.css";
 
 export const metadata = {
-  title: "Hair Consultation in Belper | Goddess Rising",
+  title: "Hair Consultation in Belper",
   description:
     "Arrange a confidential hair consultation in Belper. Discuss hair loss concerns, mesh integration options, and extension solutions in a calm one to one setting.",
   alternates: {
