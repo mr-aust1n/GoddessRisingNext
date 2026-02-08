@@ -166,7 +166,7 @@ export default function Hairmeshs() {
         aria-label="Book hair consultation"
       >
         <a
-          href="https://www.fresha.com/a/goddess-rising-hair-extensions-belper-21-market-place-cfr78yg5"
+          href="fresha.com/a/goddess-rising-hair-extensions-belper-21-market-place-cfr78yg5#buy-section"
           target="_blank"
           rel="noopener noreferrer"
           className={styles.beforeAfterButton}
