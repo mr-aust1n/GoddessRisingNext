@@ -128,14 +128,6 @@ export default function Hairmeshs() {
               Unlike wigs or glued systems, mesh integration gives you freedom,
               breathability, and a solution that feels like your own hair.
             </p>
-
-            <p>
-              For more frequently asked questions see our{" "}
-              <Link href="/faq" aria-label="Visit the FAQ page">
-                FAQ page
-              </Link>
-              .
-            </p>
           </div>
         </div>
       </section>
