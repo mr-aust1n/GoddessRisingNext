@@ -1,7 +1,7 @@
 import ContactClient from "./ContactClient";
 
 export const metadata = {
-  title: "Contact | Goddess Rising Hair Extensions",
+  title: "Contact a Hair Extensions Specialist in Belper",
   description:
     "Contact Goddess Rising Hair Extensions in Belper. Book a consultation or ask a question about hair extensions and mesh integration.",
   alternates: {

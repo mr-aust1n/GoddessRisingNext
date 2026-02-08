@@ -1,7 +1,7 @@
 import FaqClient from "./FaqClient";
 
 export const metadata = {
-  title: "FAQ | Goddess Rising Hair Extensions",
+  title: "Hair Extensions FAQs",
   description:
     "Frequently asked questions about hair extensions and mesh integration, including maintenance, aftercare, and what to expect.",
   alternates: {
