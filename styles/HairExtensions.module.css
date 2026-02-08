@@ -1,7 +1,9 @@
 /* === HERO (copied from MeshIntegration.module.css) === */
 .heroSection {
     background-color: var(--footer-color);
-    padding: 70px 20px 40px;
+    padding: 100px 20px 40px;
+
+
 }
 
 .heroInner {

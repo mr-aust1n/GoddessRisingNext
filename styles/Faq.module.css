@@ -237,7 +237,7 @@
 
 @media (max-width: 640px) {
     .faqPage {
-        padding: 60px 16px;
+        padding: 100px 20px;
     }
 
     .faqItem {
@@ -246,5 +246,6 @@
 
     .searchInput {
         padding: 12px;
+        max-width: 80%;
     }
 }
