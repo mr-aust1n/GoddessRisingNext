@@ -3,7 +3,7 @@ import Link from "next/link";
 import BeforeAfter from "../../components/BeforeAfter";
 import styles from "../../styles/MeshIntegration.module.css";
 export const metadata = {
-  title: "Mesh Integration in Belper | Hair Loss Support",
+  title: "Mesh Integration in Belper",
   description:
     "Mesh integration in Belper for women experiencing hair thinning or hair loss. A discreet, breathable system designed for secure coverage and natural blending.",
   alternates: { canonical: "/mesh-integration" },

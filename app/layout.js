@@ -7,8 +7,7 @@ import Footer from "../components/Footer";
 export const metadata = {
   metadataBase: new URL("https://www.goddessrisinghair.co.uk"),
   title: {
-    default:
-      "Goddess Rising Hair Extensions | Specialist Hair Studio in Belper",
+    default: "Mesh Integration in Belper",
     template: "%s | Goddess Rising Hair Extensions",
   },
   description:
