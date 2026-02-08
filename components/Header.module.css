@@ -138,7 +138,7 @@
 }
 
 /* Desktop at 1350px and up */
-@media (min-width: 1030px) {
+@media (min-width: 1160px) {
 
     .headerArea {
         border-bottom: 1px solid #ffcf40;
