@@ -1,6 +1,6 @@
 .faqPage {
     background: #fdf8f4;
-    padding: 160px 20px;
+    padding: 100px 20px;
     color: #4d2b1f;
     font-family: var(--text-font);
 }
@@ -17,7 +17,7 @@
 
 .intro h1 {
     font-family: var(--title-font);
-    font-size: clamp(2rem, 4vw, 2.8rem);
+    font-size: clamp(2rem, 7vw, 2.6rem);
     margin-bottom: 10px;
 }
 
@@ -48,7 +48,7 @@
 }
 
 .searchInput {
-    width: 100%;
+    width: 80%;
     padding: 12px 14px;
     border-radius: 14px;
     border: 1px solid rgba(169, 118, 82, 0.35);
@@ -67,6 +67,7 @@
     gap: 10px;
     flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
 }
 
 .filterBtn {
@@ -78,7 +79,8 @@
     cursor: pointer;
     font-family: var(--text-font);
     font-weight: 600;
-    font-size: 24px;
+    font-size: 1rem;
+    line-height: 1.1;
 }
 
 .filterBtn:hover {
@@ -118,7 +120,7 @@
 
 .faqItem {
     border-radius: 16px;
-    padding: 24px;
+    padding: 20px;
     border: 1px solid rgba(169, 118, 82, 0.2);
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
     transition: border-color 0.2s ease, box-shadow 0.2s ease;
@@ -147,7 +149,7 @@
     align-items: center;
     gap: 12px;
     text-align: left;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #3c2014;
     cursor: pointer;
     padding: 0;
@@ -235,17 +237,21 @@
     border: 0;
 }
 
-@media (max-width: 640px) {
+/* Desktop  */
+@media (min-width: 640px) {
     .faqPage {
-        padding: 100px 20px;
+        padding: 160px 20px;
     }
 
     .faqItem {
-        padding: 20px;
+        padding: 24px;
+    }
+
+    .questionButton {
+        font-size: 1.2rem;
     }
 
     .searchInput {
-        padding: 12px;
-        max-width: 80%;
+        width: 100%;
     }
 }
