@@ -138,7 +138,7 @@
 }
 
 /* Tablet Nav */
-@media (min-width: 1060px) {
+@media (min-width: 1024px) {
 
     .headerArea {
         border-bottom: 1px solid #ffcf40;
@@ -153,7 +153,7 @@
     }
 
     .logo img {
-        padding-right: 10px;
+        padding: 0px 10px;
         height: 50px;
         width: auto
     }
@@ -171,7 +171,7 @@
 
     .nav ul {
         flex-direction: row;
-        gap: 7px;
+        gap: 3px;
         width: auto;
     }
 
