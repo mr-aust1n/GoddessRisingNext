@@ -92,7 +92,7 @@ export default function HairExtensions() {
         aria-label="About Goddess Rising Hair Extensions"
       >
         <div className={styles.extensionContainer}>
-          <h1>Hair Extensions</h1>
+          <h2>Hair Extensions</h2>
 
           <p>
             Hair extensions are so much more than added length, they’re about
