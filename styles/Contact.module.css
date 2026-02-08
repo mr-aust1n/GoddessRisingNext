@@ -3,7 +3,7 @@
 ========================= */
 
 .contactSection {
-    padding: 160px 20px;
+    padding: 100px 20px;
     background-color: var(--lighter-color);
     max-width: 100%;
 }
@@ -273,5 +273,9 @@
 
     .mapInner iframe {
         height: 460px;
+    }
+
+    .contactSection {
+        padding: 120px 20px;
     }
 }
