@@ -262,7 +262,7 @@ export default function Faq() {
                       </span>
                       <span className={styles.toggleCopy}>
                         {isOpen ? "Hide answer" : "Read more"}
-                        <span className={styles.toggleIcon} aria-hidden="true">
+                        <span className={styles.toggleIcon}>
                           {isOpen ? "-" : "+"}
                         </span>
                       </span>
