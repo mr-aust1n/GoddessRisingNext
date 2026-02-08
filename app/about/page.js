@@ -4,7 +4,7 @@ import TransformationCarousel from "../../components/TransformationCarousel";
 import styles from "../../styles/About.module.css";
 
 export const metadata = {
-  title: "About Our Hair Extensions in Belper",
+  title: "About Our Hair Extensions",
   description:
     "Learn about Goddess Rising Hair Extensions, founded by Sal in Belper, Derbyshire. A private one to one hair studio focused on confidence, empowerment, and bespoke hair solutions.",
   alternates: {
