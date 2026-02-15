@@ -6,7 +6,7 @@
 /* === HERO SECTION === */
 .heroSection {
     position: relative;
-    height: clamp(520px, 100vh, 900px);
+    height: clamp(520px, 80vh, 900px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,6 +38,7 @@
             rgba(0, 0, 0, 0.25) 95%,
             rgba(0, 0, 0, 0) 100%);
     max-width: 60%;
+    max-width: 1400px;
     z-index: 1;
 }
 
@@ -68,6 +69,7 @@
     transform: translateX(-50%);
     overflow-x: clip;
     background-color: var(--section-bg, #fff);
+    top: 70px;
 }
 
 .aboutSplitContainer {
@@ -186,8 +188,8 @@
 
     .aboutSplitContainer {
         flex-direction: row-reverse;
-        /* min-height: 420px; */
         max-height: 60%;
+        position: relative;
     }
 
     .textSide,
@@ -206,7 +208,6 @@
 
     .aboutImage {
         margin: 0 auto;
-        max-width: 755px;
     }
 }
 
