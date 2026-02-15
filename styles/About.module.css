@@ -6,11 +6,12 @@
 /* === HERO SECTION === */
 .heroSection {
     position: relative;
-    height: clamp(520px, 85vh, 900px);
+    height: clamp(520px, 100vh, 900px);
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    top: 90px;
 }
 
 /* Hero image (real <img>) */
