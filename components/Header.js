@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./Header.module.css";
-import HeaderClient from "./HeaderClient";
 
 const navItems = [
   { href: "/about", label: "About" },
@@ -26,8 +25,29 @@ export default function Header() {
           />
         </Link>
 
-        {/* Client logic (hamburger + active state) */}
-        <HeaderClient navItems={navItems} />
+        {/* No client component, links are in server HTML */}
+        <details className={styles.navWrapper}>
+          <summary
+            className={styles.hamburger}
+            aria-label="Toggle navigation menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </summary>
+
+          <nav className={styles.nav} aria-label="Main Menu">
+            <ul>
+              {navItems.map((item) => (
+                <li key={item.href}>
+                  <Link href={item.href} className={styles.linkStyle}>
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        </details>
       </div>
     </header>
   );
