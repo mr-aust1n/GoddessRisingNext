@@ -11,7 +11,6 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    top: 70px;
     z-index: 1;
 }
 
@@ -69,7 +68,7 @@
     transform: translateX(-50%);
     overflow-x: clip;
     background-color: var(--section-bg, #fff);
-    top: 70px;
+
 }
 
 .aboutSplitContainer {
