@@ -3,6 +3,7 @@ import "@fontsource/poppins";
 import "../styles/globals.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata = {
   metadataBase: new URL("https://www.goddessrisinghair.co.uk"),
@@ -92,6 +93,7 @@ export default function RootLayout({ children }) {
         <Header />
         <main id="main-content">{children}</main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
