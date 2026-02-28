@@ -159,7 +159,7 @@ export default function HairExtensions() {
       <BeforeAfter
         name="Sophie"
         location="Amber Valley, Derbyshire"
-        description="Years of chemical damage and struggling with trichotillomania left Sharine’s hair fragile and uneven, and her confidence low. We applied a mesh integration system which transformed not just her hair, but how she felt. Soft, natural-looking hair gave her the confidence to finally feel like herself again."
+        description="Sophie had rocked a short blunt bob but was ready for a change, she wanted long, flowing hair without the wait. We applied a discreet Braidless weave with tiny wefts, leaving her with natural-looking length and a boost of confidence that had her walking out with a spring in her step."
         beforeImage="/assets/images/Hair_weave_before.webp"
         afterImage="/assets/images/Hair_weave_after.webp"
       />
