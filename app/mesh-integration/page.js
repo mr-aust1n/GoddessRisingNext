@@ -53,7 +53,7 @@ export default function Hairmeshs() {
               aria-label="Mesh integration hero actions"
             >
               <a
-                href="https://www.fresha.com/a/goddess-rising-hair-meshs-belper-21-market-place-cfr78yg5"
+                href="https://www.fresha.com/a/goddess-rising-hair-extensions-belper-21-market-place-cfr78yg5"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.heroButtonPrimary}
