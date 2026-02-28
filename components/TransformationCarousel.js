@@ -48,13 +48,15 @@ export default function TransformationCarousel() {
 
         <SwiperSlide className={`${styles.slide} ${styles.slide3}`}>
           <div className={styles.carouselContent}>
-            <Link
-              href="/consultation"
+            <a
+              href="https://www.fresha.com/a/goddess-rising-hair-extensions-belper-21-market-place-cfr78yg5?modal=gallery"
               className={styles.carouselBtn}
-              aria-label="Book a free consultation"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Book a free consultation on Fresha"
             >
               Book a Free Consultation
-            </Link>
+            </a>
           </div>
         </SwiperSlide>
       </Swiper>
