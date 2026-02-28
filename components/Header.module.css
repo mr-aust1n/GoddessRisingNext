@@ -1,9 +1,7 @@
 .headerArea {
-    position: fixed;
+    position: sticky;
     top: 0;
-    left: 0;
-    right: 0;
-    z-index: 99999;
+    z-index: 999;
     background-color: var(--heading-color);
     width: 100%;
     padding: 12px 0;
@@ -30,7 +28,7 @@
 .hamburger {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 5px;
     background: none;
     border: none;
     cursor: pointer;
@@ -45,15 +43,15 @@
     transition: all 0.3s ease;
 }
 
-.hamburger.open span:nth-child(1) {
+.open span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
 }
 
-.hamburger.open span:nth-child(2) {
+.open span:nth-child(2) {
     opacity: 0;
 }
 
-.hamburger.open span:nth-child(3) {
+.open span:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
 }
 
@@ -73,7 +71,7 @@
     z-index: 1000;
 }
 
-.nav.show {
+.show {
     display: flex;
 }
 
@@ -83,26 +81,22 @@
     gap: 6px;
     list-style: none;
     width: 100%;
-}
-
-.nav li {
-    width: auto;
-    padding: 10px 20px;
-    font-weight: 900;
-    font-size: 16px;
+    margin: 0;
+    padding: 0;
 }
 
 /* Links */
 .linkStyle {
     font-size: 18px;
-    font-family: sans-serif;
+    font-family: var(--text-font);
     color: var(--main-color);
     text-transform: uppercase;
     position: relative;
     transition: opacity 0.3s ease;
-    font-weight: 900;
-    width: 60%;
+    font-weight: 700;
+    width: 100%;
     display: inline-block;
+    text-decoration: none;
 }
 
 .linkStyle:hover {
@@ -127,7 +121,7 @@
     transform-origin: left;
 }
 
-/* Active state: underline only */
+/* Active state */
 .active {
     color: var(--main-color);
 }
@@ -137,9 +131,8 @@
     transform-origin: left;
 }
 
-/* Tablet Nav */
-@media (min-width: 1024px) {
-
+/* Desktop */
+@media (min-width: 1030px) {
     .headerArea {
         border-bottom: 1px solid #ffcf40;
     }
@@ -153,9 +146,9 @@
     }
 
     .logo img {
-        padding: 0px 10px;
+        padding-right: 55px;
         height: 50px;
-        width: auto
+        width: auto;
     }
 
     .nav {
@@ -171,11 +164,9 @@
 
     .nav ul {
         flex-direction: row;
-        gap: 3px;
+        gap: 24px;
         width: auto;
     }
-
-
 
     .linkStyle {
         padding: 0;
@@ -186,18 +177,4 @@
     .linkStyle::before {
         width: 100%;
     }
-}
-
-
-/* Desktop Nav */
-@media (min-width: 1360px) {
-
-    .nav ul {
-        gap: 24px;
-    }
-
-    .logo img {
-        padding-right: 55px;
-    }
-
 }

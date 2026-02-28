@@ -1,5 +1,9 @@
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import styles from "./Header.module.css";
 
 const navItems = [
@@ -12,10 +16,21 @@ const navItems = [
 ];
 
 export default function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  const toggleMenu = () => setMenuOpen((v) => !v);
+  const closeMenu = () => setMenuOpen(false);
+
   return (
     <header className={styles.headerArea} aria-label="Site Navigation">
       <div className={styles.headerInner}>
-        <Link href="/" className={styles.logo} aria-label="Go to home">
+        <Link
+          href="/"
+          className={styles.logo}
+          aria-label="Go to home"
+          onClick={closeMenu}
+        >
           <Image
             src="/assets/images/goddess-hair-extensions-logo.webp"
             alt="Goddess Rising - Hair Extensions and Hair Solutions, Belper"
@@ -25,29 +40,43 @@ export default function Header() {
           />
         </Link>
 
-        {/* No client component, links are in server HTML */}
-        <details className={styles.navWrapper}>
-          <summary
-            className={styles.hamburger}
-            aria-label="Toggle navigation menu"
-          >
-            <span></span>
-            <span></span>
-            <span></span>
-          </summary>
+        <button
+          type="button"
+          className={`${styles.hamburger} ${menuOpen ? styles.open : ""}`}
+          onClick={toggleMenu}
+          aria-label="Toggle navigation menu"
+          aria-expanded={menuOpen}
+          aria-controls="site-main-menu"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
 
-          <nav className={styles.nav} aria-label="Main Menu">
-            <ul>
-              {navItems.map((item) => (
+        <nav
+          id="site-main-menu"
+          className={`${styles.nav} ${menuOpen ? styles.show : ""}`}
+          aria-label="Main Menu"
+        >
+          <ul>
+            {navItems.map((item) => {
+              const isActive = pathname === item.href;
+
+              return (
                 <li key={item.href}>
-                  <Link href={item.href} className={styles.linkStyle}>
+                  <Link
+                    href={item.href}
+                    className={`${styles.linkStyle} ${isActive ? styles.active : ""}`}
+                    aria-current={isActive ? "page" : undefined}
+                    onClick={closeMenu}
+                  >
                     {item.label}
                   </Link>
                 </li>
-              ))}
-            </ul>
-          </nav>
-        </details>
+              );
+            })}
+          </ul>
+        </nav>
       </div>
     </header>
   );
