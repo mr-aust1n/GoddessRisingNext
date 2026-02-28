@@ -27,14 +27,14 @@
     z-index: 1;
 }
 
-/* Slide 1 background removed because we now use an <img> */
+/* Slide 1 background removed because <img> */
 .slide1 {
     background-image: none;
 }
 
 /* Slides 2 and 3 remain background images */
 .slide2 {
-    background-image: url("/assets/images/hair-extensions-goddess-rising.webp");
+    background-image: url("/assets/images/mesh-hair-system-goddess-rising.webp");
 }
 
 .slide3 {
@@ -130,7 +130,7 @@
 /* Mobile images for slide 2 and 3 */
 @media (max-width: 767px) {
     .slide2 {
-        background-image: url("/assets/images/mobile/hair-extensions-goddess-rising-sm.webp");
+        background-image: url("/assets/images/mobile/mesh-hair-system-goddess-rising-sm.webp");
     }
 
     .slide3 {
