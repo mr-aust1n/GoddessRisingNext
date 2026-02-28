@@ -44,7 +44,7 @@
 }
 
 .open span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
+    transform: rotate(45deg) translate(7px, 5px);
 }
 
 .open span:nth-child(2) {
@@ -155,7 +155,6 @@
         position: static;
         display: flex;
         background: transparent;
-        flex-direction: row;
         align-items: center;
         padding: 0;
         box-shadow: none;
