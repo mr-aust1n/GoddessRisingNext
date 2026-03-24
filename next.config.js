@@ -33,6 +33,13 @@ const nextConfig = {
       },
     ];
   },
+  async rewrites() {
+    return [
+      {
+        source: "/sitemap.xml",
+        destination: "/sitemap_static.xml",
+      },
+    ];
+  },
 };
-
 module.exports = nextConfig;
