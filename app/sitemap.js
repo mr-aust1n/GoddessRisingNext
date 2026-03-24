@@ -1,11 +1,32 @@
-export default function robots() {
-  return {
-    rules: [
-      {
-        userAgent: "*",
-        allow: "/",
-      },
-    ],
-    sitemap: "https://www.goddessrisinghair.co.uk/sitemap.xml",
-  };
+export default function sitemap() {
+  return [
+    {
+      url: "https://www.goddessrisinghair.co.uk",
+      lastModified: "2026-01-27",
+    },
+    {
+      url: "https://www.goddessrisinghair.co.uk/about",
+      lastModified: "2026-01-27",
+    },
+    {
+      url: "https://www.goddessrisinghair.co.uk/hair-extensions",
+      lastModified: "2026-01-27",
+    },
+    {
+      url: "https://www.goddessrisinghair.co.uk/mesh-integration",
+      lastModified: "2026-01-27",
+    },
+    {
+      url: "https://www.goddessrisinghair.co.uk/consultation",
+      lastModified: "2026-01-27",
+    },
+    {
+      url: "https://www.goddessrisinghair.co.uk/faq",
+      lastModified: "2026-01-27",
+    },
+    {
+      url: "https://www.goddessrisinghair.co.uk/contact",
+      lastModified: "2026-01-27",
+    },
+  ];
 }
