@@ -1,32 +1,12 @@
 export default function sitemap() {
+  const base = "https://www.goddessrisinghair.co.uk";
   return [
-    {
-      url: "https://www.goddessrisinghair.co.uk",
-      lastModified: "2026-01-27",
-    },
-    {
-      url: "https://www.goddessrisinghair.co.uk/about",
-      lastModified: "2026-01-27",
-    },
-    {
-      url: "https://www.goddessrisinghair.co.uk/hair-extensions",
-      lastModified: "2026-01-27",
-    },
-    {
-      url: "https://www.goddessrisinghair.co.uk/mesh-integration",
-      lastModified: "2026-01-27",
-    },
-    {
-      url: "https://www.goddessrisinghair.co.uk/consultation",
-      lastModified: "2026-01-27",
-    },
-    {
-      url: "https://www.goddessrisinghair.co.uk/faq",
-      lastModified: "2026-01-27",
-    },
-    {
-      url: "https://www.goddessrisinghair.co.uk/contact",
-      lastModified: "2026-01-27",
-    },
+    { url: `${base}`, lastModified: "2026-01-27" },
+    { url: `${base}/about`, lastModified: "2026-01-27" },
+    { url: `${base}/hair-extensions`, lastModified: "2026-01-27" },
+    { url: `${base}/mesh-integration`, lastModified: "2026-01-27" },
+    { url: `${base}/consultation`, lastModified: "2026-01-27" },
+    { url: `${base}/faq`, lastModified: "2026-01-27" },
+    { url: `${base}/contact`, lastModified: "2026-01-27" },
   ];
 }
